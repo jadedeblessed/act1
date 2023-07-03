@@ -17,8 +17,8 @@ terraform {
 # Provider Block
 provider "aws" {
   region = "us-west-2"
-  access_key = "AKIA42FD5YMYERALMYRW"
-  secret_key = "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"
+  //access_key = "AKIA42FD5YMYERALMYRW"
+  //secret_key = "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"
 }
 
 resource "aws_instance" "ec2" {
