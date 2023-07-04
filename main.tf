@@ -29,6 +29,7 @@ resource "aws_instance" "ec2" {
 # Refer to the arguments section for the EIP (https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip#argument-reference)
 resource "aws_eip" "elasticeip" {
   instance = aws_instance.ec2.id
+  subnet_id = "subnet-09a059548785d815c"
 }
 
 # Refer to the attribute section for the EIP (https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip#attributes-reference)
