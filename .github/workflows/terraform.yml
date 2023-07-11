@@ -19,10 +19,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.1.9
-      #- name: Set up AWS credentials
-        #run: |
-         #echo "AWS_ACCESS_KEY_ID=$AKIA42FD5YMYERALMYRW" >> $GITHUB_ENV
-         #echo "AWS_SECRET_ACCESS_KEY=$+Mn2UieDXyl/b9u0qfJNGCCZD266O1F0CsbA1z6r" >> $GITHUB_ENV
+       
       - name: Init
         run: terraform init
       - name: fmt
